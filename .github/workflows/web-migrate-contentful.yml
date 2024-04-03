@@ -13,7 +13,7 @@ on:
         type: string
     secrets:
       amazon_role:
-        description: The AWS role to assume
+        description: The AWS role to assume to store state in S3
         required: true
       npm_pat:
         description: The PAT for NPM registry access

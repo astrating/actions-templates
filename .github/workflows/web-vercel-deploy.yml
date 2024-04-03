@@ -43,9 +43,9 @@ jobs:
           registry-url: https://npm.pkg.github.com
           cache: yarn
       - name: Install dependencies
-        run: yarn install --production=false --frozen-lockfile
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_PAT}}
+        run: yarn install --production=false --frozen-lockfile
       - name: Deploy preview
         env:
           VERCEL_ORG_ID: ${{ inputs.vercel_org_id }}
