@@ -51,4 +51,4 @@ jobs:
           VERCEL_ORG_ID: ${{ inputs.vercel_org_id }}
           VERCEL_PROJECT_ID: ${{ inputs.vercel_project_id }}
           VERCEL_AUTH_TOKEN: ${{ secrets.vercel_auth_token }}
-        run: npx vercel --prod --token=$VERCEL_AUTH_TOKEN
+        run: npx vercel --prod --token="$VERCEL_AUTH_TOKEN"
